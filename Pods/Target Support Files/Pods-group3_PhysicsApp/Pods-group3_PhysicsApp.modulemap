@@ -1,0 +1,6 @@
+framework module Pods_group3_PhysicsApp {
+  umbrella header "Pods-group3_PhysicsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

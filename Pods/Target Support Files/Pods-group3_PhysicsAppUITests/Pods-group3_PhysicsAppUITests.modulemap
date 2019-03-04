@@ -1,0 +1,6 @@
+framework module Pods_group3_PhysicsAppUITests {
+  umbrella header "Pods-group3_PhysicsAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

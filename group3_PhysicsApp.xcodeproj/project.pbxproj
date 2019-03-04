@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22030D4821EEA99A00777F28 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 22030D4721EEA99A00777F28 /* MenuScene.sks */; };
+		22030D4A21EEA9CA00777F28 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22030D4921EEA9CA00777F28 /* MenuScene.swift */; };
+		22030D4C21EEC09E00777F28 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22030D4B21EEC09E00777F28 /* test2.swift */; };
+		221237F021EE662900106F4E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221237EF21EE662900106F4E /* test.swift */; };
+		3BB4AE871D3EDAC4D6D04BF8 /* Pods_group3_PhysicsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AF8D313A1CE77AD824B70A /* Pods_group3_PhysicsAppUITests.framework */; };
+		4DABC7D4F4628E2B5D39C3F3 /* Pods_group3_PhysicsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D0B4FAF443D495D23E7D2C /* Pods_group3_PhysicsAppTests.framework */; };
+		541FB94021E8FC8500DAC4A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB93F21E8FC8500DAC4A7 /* ViewController.swift */; };
+		541FB94221E8FC9000DAC4A7 /* FrictionVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB94121E8FC9000DAC4A7 /* FrictionVariables.swift */; };
+		541FB94421E8FC9600DAC4A7 /* FrictionGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541FB94321E8FC9600DAC4A7 /* FrictionGameScene.sks */; };
+		541FB94621E8FC9C00DAC4A7 /* FrictionGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB94521E8FC9C00DAC4A7 /* FrictionGameScene.swift */; };
+		541FB94821E8FCA200DAC4A7 /* FrictionGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB94721E8FCA200DAC4A7 /* FrictionGameViewController.swift */; };
+		541FB94B21E903E600DAC4A7 /* MagnetVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB94A21E903E600DAC4A7 /* MagnetVariables.swift */; };
+		541FB94D21E903F100DAC4A7 /* MagnetGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541FB94C21E903F100DAC4A7 /* MagnetGameScene.sks */; };
+		541FB94F21E903FC00DAC4A7 /* MagnetGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB94E21E903FC00DAC4A7 /* MagnetGameScene.swift */; };
+		541FB95121E9040800DAC4A7 /* MagnetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB95021E9040800DAC4A7 /* MagnetGameViewController.swift */; };
+		54538FAB21A484720059A6BC /* ThermalTransferScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 54538FAA21A484720059A6BC /* ThermalTransferScene.sks */; };
+		54538FAD21A484A40059A6BC /* ThermalTransferScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54538FAC21A484A40059A6BC /* ThermalTransferScene.swift */; };
+		54538FAF21A485130059A6BC /* ThermalTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54538FAE21A485130059A6BC /* ThermalTransferViewController.swift */; };
+		545AC97C21E90AF2009139D5 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC97B21E90AF2009139D5 /* Variables.swift */; };
+		545AC97E21E90AFB009139D5 /* InsertVariableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC97D21E90AFB009139D5 /* InsertVariableView.swift */; };
+		545AC98021E90B07009139D5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 545AC97F21E90B07009139D5 /* GameScene.sks */; };
+		545AC98221E90B0E009139D5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC98121E90B0E009139D5 /* GameScene.swift */; };
+		545AC98421E90B16009139D5 /* RightScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 545AC98321E90B16009139D5 /* RightScene.sks */; };
+		545AC98621E90B1E009139D5 /* RightScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC98521E90B1E009139D5 /* RightScene.swift */; };
+		545AC98821E90B28009139D5 /* TopScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 545AC98721E90B28009139D5 /* TopScene.sks */; };
+		545AC98A21E90B2E009139D5 /* TopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC98921E90B2E009139D5 /* TopScene.swift */; };
+		545AC98C21E90B3A009139D5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 545AC98B21E90B3A009139D5 /* Actions.sks */; };
+		545AC98E21E90B41009139D5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC98D21E90B41009139D5 /* GameViewController.swift */; };
+		547381F021B1B1BE007BA246 /* SKButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547381EF21B1B1BE007BA246 /* SKButtonNode.swift */; };
+		547F82B721A720C400BC0CC1 /* ThermalTransferSelectMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F82B621A720C400BC0CC1 /* ThermalTransferSelectMenu.swift */; };
+		54A5E27521A3206100F57C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E27421A3206100F57C49 /* AppDelegate.swift */; };
+		54A5E27A21A3206100F57C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A5E27821A3206100F57C49 /* Main.storyboard */; };
+		54A5E27C21A3206200F57C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5E27B21A3206200F57C49 /* Assets.xcassets */; };
+		54A5E27F21A3206200F57C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A5E27D21A3206200F57C49 /* LaunchScreen.storyboard */; };
+		54A5E28A21A3206200F57C49 /* group3_PhysicsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E28921A3206200F57C49 /* group3_PhysicsAppTests.swift */; };
+		54A5E29521A3206200F57C49 /* group3_PhysicsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E29421A3206200F57C49 /* group3_PhysicsAppUITests.swift */; };
+		54A5E2A321A322F900F57C49 /* GradeSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E2A221A322F900F57C49 /* GradeSelect.swift */; };
+		54A5E2A521A3231800F57C49 /* Grade11ModelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E2A421A3231800F57C49 /* Grade11ModelSelect.swift */; };
+		71180040A63090A80FEB3EE2 /* Pods_group3_PhysicsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD47B2642EB1CC890A2DAB /* Pods_group3_PhysicsApp.framework */; };
+		AA03ABB721C72377007667DF /* CarFrictionMenu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03ABB621C72377007667DF /* CarFrictionMenu1.swift */; };
+		AA61488E21B49E5C00165E01 /* ThermalChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61488D21B49E5C00165E01 /* ThermalChart.swift */; };
+		AAB3417321BD84E40042E417 /* CarFrictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3417221BD84E40042E417 /* CarFrictionViewController.swift */; };
+		AAB3417B21BD8AE10042E417 /* CarFrictionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AAB3417A21BD8AE10042E417 /* CarFrictionScene.sks */; };
+		AAB3417D21BD8B110042E417 /* CarFrictionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3417C21BD8B110042E417 /* CarFrictionScene.swift */; };
+		AAC1959E21B38CFE00E7ABA0 /* candleLight.sks in Resources */ = {isa = PBXBuildFile; fileRef = AAC1959C21B38CFE00E7ABA0 /* candleLight.sks */; };
+		AAC1959F21B38CFE00E7ABA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC1959D21B38CFE00E7ABA0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54A5E28621A3206200F57C49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54A5E26921A3206100F57C49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A5E27021A3206100F57C49;
+			remoteInfo = group3_PhysicsApp;
+		};
+		54A5E29121A3206200F57C49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54A5E26921A3206100F57C49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A5E27021A3206100F57C49;
+			remoteInfo = group3_PhysicsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6B27021645C82389EC3DEE /* Pods-group3_PhysicsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsApp/Pods-group3_PhysicsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		22030D4721EEA99A00777F28 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		22030D4921EEA9CA00777F28 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		22030D4B21EEC09E00777F28 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
+		221237EF21EE662900106F4E /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		33DE1DFB65502778670CD3A4 /* Pods-group3_PhysicsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsAppTests/Pods-group3_PhysicsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		49AF8D313A1CE77AD824B70A /* Pods_group3_PhysicsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_group3_PhysicsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		541FB93F21E8FC8500DAC4A7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		541FB94121E8FC9000DAC4A7 /* FrictionVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrictionVariables.swift; sourceTree = "<group>"; };
+		541FB94321E8FC9600DAC4A7 /* FrictionGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FrictionGameScene.sks; sourceTree = "<group>"; };
+		541FB94521E8FC9C00DAC4A7 /* FrictionGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrictionGameScene.swift; sourceTree = "<group>"; };
+		541FB94721E8FCA200DAC4A7 /* FrictionGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrictionGameViewController.swift; sourceTree = "<group>"; };
+		541FB94A21E903E600DAC4A7 /* MagnetVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnetVariables.swift; sourceTree = "<group>"; };
+		541FB94C21E903F100DAC4A7 /* MagnetGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MagnetGameScene.sks; sourceTree = "<group>"; };
+		541FB94E21E903FC00DAC4A7 /* MagnetGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnetGameScene.swift; sourceTree = "<group>"; };
+		541FB95021E9040800DAC4A7 /* MagnetGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnetGameViewController.swift; sourceTree = "<group>"; };
+		54538FAA21A484720059A6BC /* ThermalTransferScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ThermalTransferScene.sks; sourceTree = "<group>"; };
+		54538FAC21A484A40059A6BC /* ThermalTransferScene.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = ThermalTransferScene.swift; sourceTree = "<group>"; };
+		54538FAE21A485130059A6BC /* ThermalTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalTransferViewController.swift; sourceTree = "<group>"; };
+		545AC97B21E90AF2009139D5 /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		545AC97D21E90AFB009139D5 /* InsertVariableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertVariableView.swift; sourceTree = "<group>"; };
+		545AC97F21E90B07009139D5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		545AC98121E90B0E009139D5 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		545AC98321E90B16009139D5 /* RightScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RightScene.sks; sourceTree = "<group>"; };
+		545AC98521E90B1E009139D5 /* RightScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightScene.swift; sourceTree = "<group>"; };
+		545AC98721E90B28009139D5 /* TopScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TopScene.sks; sourceTree = "<group>"; };
+		545AC98921E90B2E009139D5 /* TopScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScene.swift; sourceTree = "<group>"; };
+		545AC98B21E90B3A009139D5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		545AC98D21E90B41009139D5 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		547381EF21B1B1BE007BA246 /* SKButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButtonNode.swift; sourceTree = "<group>"; };
+		547F82B621A720C400BC0CC1 /* ThermalTransferSelectMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalTransferSelectMenu.swift; sourceTree = "<group>"; };
+		54A5E27121A3206100F57C49 /* group3_PhysicsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = group3_PhysicsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A5E27421A3206100F57C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54A5E27921A3206100F57C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54A5E27B21A3206200F57C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54A5E27E21A3206200F57C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54A5E28021A3206200F57C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A5E28521A3206200F57C49 /* group3_PhysicsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = group3_PhysicsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A5E28921A3206200F57C49 /* group3_PhysicsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = group3_PhysicsAppTests.swift; sourceTree = "<group>"; };
+		54A5E28B21A3206200F57C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A5E29021A3206200F57C49 /* group3_PhysicsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = group3_PhysicsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A5E29421A3206200F57C49 /* group3_PhysicsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = group3_PhysicsAppUITests.swift; sourceTree = "<group>"; };
+		54A5E29621A3206200F57C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A5E2A221A322F900F57C49 /* GradeSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSelect.swift; sourceTree = "<group>"; };
+		54A5E2A421A3231800F57C49 /* Grade11ModelSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade11ModelSelect.swift; sourceTree = "<group>"; };
+		6EE1441357E0C87305779550 /* Pods-group3_PhysicsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsAppTests/Pods-group3_PhysicsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB57D7EC0FB918B32C99E82 /* Pods-group3_PhysicsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsAppUITests/Pods-group3_PhysicsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96D0B4FAF443D495D23E7D2C /* Pods_group3_PhysicsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_group3_PhysicsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E39865B7A33BE3288381063 /* Pods-group3_PhysicsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsApp/Pods-group3_PhysicsApp.release.xcconfig"; sourceTree = "<group>"; };
+		A8337C2A4B5AE689A21BE07A /* Pods-group3_PhysicsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group3_PhysicsAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-group3_PhysicsAppUITests/Pods-group3_PhysicsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA03ABB621C72377007667DF /* CarFrictionMenu1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFrictionMenu1.swift; sourceTree = "<group>"; };
+		AA61488D21B49E5C00165E01 /* ThermalChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalChart.swift; sourceTree = "<group>"; };
+		AAB3417221BD84E40042E417 /* CarFrictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFrictionViewController.swift; sourceTree = "<group>"; };
+		AAB3417A21BD8AE10042E417 /* CarFrictionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CarFrictionScene.sks; sourceTree = "<group>"; };
+		AAB3417C21BD8B110042E417 /* CarFrictionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFrictionScene.swift; sourceTree = "<group>"; };
+		AAC1959C21B38CFE00E7ABA0 /* candleLight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = candleLight.sks; sourceTree = "<group>"; };
+		AAC1959D21B38CFE00E7ABA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBFD47B2642EB1CC890A2DAB /* Pods_group3_PhysicsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_group3_PhysicsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54A5E26E21A3206100F57C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71180040A63090A80FEB3EE2 /* Pods_group3_PhysicsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28221A3206200F57C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DABC7D4F4628E2B5D39C3F3 /* Pods_group3_PhysicsAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28D21A3206200F57C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB4AE871D3EDAC4D6D04BF8 /* Pods_group3_PhysicsAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C59AF423FB5291A8F5C3BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B27021645C82389EC3DEE /* Pods-group3_PhysicsApp.debug.xcconfig */,
+				9E39865B7A33BE3288381063 /* Pods-group3_PhysicsApp.release.xcconfig */,
+				6EE1441357E0C87305779550 /* Pods-group3_PhysicsAppTests.debug.xcconfig */,
+				33DE1DFB65502778670CD3A4 /* Pods-group3_PhysicsAppTests.release.xcconfig */,
+				7FB57D7EC0FB918B32C99E82 /* Pods-group3_PhysicsAppUITests.debug.xcconfig */,
+				A8337C2A4B5AE689A21BE07A /* Pods-group3_PhysicsAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35B888B9742635379009BAAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD47B2642EB1CC890A2DAB /* Pods_group3_PhysicsApp.framework */,
+				96D0B4FAF443D495D23E7D2C /* Pods_group3_PhysicsAppTests.framework */,
+				49AF8D313A1CE77AD824B70A /* Pods_group3_PhysicsAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		541FB93E21E8FC6600DAC4A7 /* Friction */ = {
+			isa = PBXGroup;
+			children = (
+				541FB93F21E8FC8500DAC4A7 /* ViewController.swift */,
+				541FB94121E8FC9000DAC4A7 /* FrictionVariables.swift */,
+				541FB94321E8FC9600DAC4A7 /* FrictionGameScene.sks */,
+				541FB94521E8FC9C00DAC4A7 /* FrictionGameScene.swift */,
+				541FB94721E8FCA200DAC4A7 /* FrictionGameViewController.swift */,
+			);
+			path = Friction;
+			sourceTree = "<group>";
+		};
+		541FB94921E903D200DAC4A7 /* Magnet */ = {
+			isa = PBXGroup;
+			children = (
+				541FB94A21E903E600DAC4A7 /* MagnetVariables.swift */,
+				541FB94C21E903F100DAC4A7 /* MagnetGameScene.sks */,
+				541FB94E21E903FC00DAC4A7 /* MagnetGameScene.swift */,
+				541FB95021E9040800DAC4A7 /* MagnetGameViewController.swift */,
+			);
+			path = Magnet;
+			sourceTree = "<group>";
+		};
+		545AC97A21E908D0009139D5 /* Projectile */ = {
+			isa = PBXGroup;
+			children = (
+				545AC97B21E90AF2009139D5 /* Variables.swift */,
+				545AC97D21E90AFB009139D5 /* InsertVariableView.swift */,
+				545AC97F21E90B07009139D5 /* GameScene.sks */,
+				545AC98121E90B0E009139D5 /* GameScene.swift */,
+				545AC98321E90B16009139D5 /* RightScene.sks */,
+				545AC98521E90B1E009139D5 /* RightScene.swift */,
+				545AC98721E90B28009139D5 /* TopScene.sks */,
+				545AC98921E90B2E009139D5 /* TopScene.swift */,
+				545AC98B21E90B3A009139D5 /* Actions.sks */,
+				545AC98D21E90B41009139D5 /* GameViewController.swift */,
+			);
+			path = Projectile;
+			sourceTree = "<group>";
+		};
+		5464A65521B8358700D54056 /* ThermalTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				54538FAA21A484720059A6BC /* ThermalTransferScene.sks */,
+				54538FAC21A484A40059A6BC /* ThermalTransferScene.swift */,
+				54538FAE21A485130059A6BC /* ThermalTransferViewController.swift */,
+				547F82B621A720C400BC0CC1 /* ThermalTransferSelectMenu.swift */,
+				AA61488D21B49E5C00165E01 /* ThermalChart.swift */,
+				AAC1959C21B38CFE00E7ABA0 /* candleLight.sks */,
+				22030D4B21EEC09E00777F28 /* test2.swift */,
+			);
+			path = ThermalTransfer;
+			sourceTree = "<group>";
+		};
+		54A5E26821A3206100F57C49 = {
+			isa = PBXGroup;
+			children = (
+				221237EF21EE662900106F4E /* test.swift */,
+				54A5E27321A3206100F57C49 /* group3_PhysicsApp */,
+				54A5E28821A3206200F57C49 /* group3_PhysicsAppTests */,
+				54A5E29321A3206200F57C49 /* group3_PhysicsAppUITests */,
+				54A5E27221A3206100F57C49 /* Products */,
+				0C59AF423FB5291A8F5C3BEA /* Pods */,
+				35B888B9742635379009BAAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54A5E27221A3206100F57C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54A5E27121A3206100F57C49 /* group3_PhysicsApp.app */,
+				54A5E28521A3206200F57C49 /* group3_PhysicsAppTests.xctest */,
+				54A5E29021A3206200F57C49 /* group3_PhysicsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54A5E27321A3206100F57C49 /* group3_PhysicsApp */ = {
+			isa = PBXGroup;
+			children = (
+				545AC97A21E908D0009139D5 /* Projectile */,
+				541FB94921E903D200DAC4A7 /* Magnet */,
+				541FB93E21E8FC6600DAC4A7 /* Friction */,
+				AAB3417121BD84030042E417 /* CarFriction */,
+				5464A65521B8358700D54056 /* ThermalTransfer */,
+				54A5E2A621A3245300F57C49 /* Menu */,
+				54A5E27421A3206100F57C49 /* AppDelegate.swift */,
+				54A5E27821A3206100F57C49 /* Main.storyboard */,
+				54A5E27B21A3206200F57C49 /* Assets.xcassets */,
+				54A5E27D21A3206200F57C49 /* LaunchScreen.storyboard */,
+				54A5E28021A3206200F57C49 /* Info.plist */,
+				547381EF21B1B1BE007BA246 /* SKButtonNode.swift */,
+				22030D4721EEA99A00777F28 /* MenuScene.sks */,
+				22030D4921EEA9CA00777F28 /* MenuScene.swift */,
+			);
+			path = group3_PhysicsApp;
+			sourceTree = "<group>";
+		};
+		54A5E28821A3206200F57C49 /* group3_PhysicsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				54A5E28921A3206200F57C49 /* group3_PhysicsAppTests.swift */,
+				54A5E28B21A3206200F57C49 /* Info.plist */,
+			);
+			path = group3_PhysicsAppTests;
+			sourceTree = "<group>";
+		};
+		54A5E29321A3206200F57C49 /* group3_PhysicsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54A5E29421A3206200F57C49 /* group3_PhysicsAppUITests.swift */,
+				54A5E29621A3206200F57C49 /* Info.plist */,
+			);
+			path = group3_PhysicsAppUITests;
+			sourceTree = "<group>";
+		};
+		54A5E2A621A3245300F57C49 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				54A5E2A221A322F900F57C49 /* GradeSelect.swift */,
+				54A5E2A421A3231800F57C49 /* Grade11ModelSelect.swift */,
+				AAC1959D21B38CFE00E7ABA0 /* Assets.xcassets */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		AAB3417121BD84030042E417 /* CarFriction */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3417221BD84E40042E417 /* CarFrictionViewController.swift */,
+				AAB3417C21BD8B110042E417 /* CarFrictionScene.swift */,
+				AAB3417A21BD8AE10042E417 /* CarFrictionScene.sks */,
+				AA03ABB621C72377007667DF /* CarFrictionMenu1.swift */,
+			);
+			path = CarFriction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54A5E27021A3206100F57C49 /* group3_PhysicsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A5E29921A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsApp" */;
+			buildPhases = (
+				E37FE90F643780A0B2A04F4D /* [CP] Check Pods Manifest.lock */,
+				54A5E26D21A3206100F57C49 /* Sources */,
+				54A5E26E21A3206100F57C49 /* Frameworks */,
+				54A5E26F21A3206100F57C49 /* Resources */,
+				108E2D090BC7FE59721CCD97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = group3_PhysicsApp;
+			productName = group3_PhysicsApp;
+			productReference = 54A5E27121A3206100F57C49 /* group3_PhysicsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54A5E28421A3206200F57C49 /* group3_PhysicsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A5E29C21A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsAppTests" */;
+			buildPhases = (
+				94FF5DDA420B648973C75B8E /* [CP] Check Pods Manifest.lock */,
+				54A5E28121A3206200F57C49 /* Sources */,
+				54A5E28221A3206200F57C49 /* Frameworks */,
+				54A5E28321A3206200F57C49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54A5E28721A3206200F57C49 /* PBXTargetDependency */,
+			);
+			name = group3_PhysicsAppTests;
+			productName = group3_PhysicsAppTests;
+			productReference = 54A5E28521A3206200F57C49 /* group3_PhysicsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54A5E28F21A3206200F57C49 /* group3_PhysicsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A5E29F21A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsAppUITests" */;
+			buildPhases = (
+				15D1CC52E35B8D72B45A4D19 /* [CP] Check Pods Manifest.lock */,
+				54A5E28C21A3206200F57C49 /* Sources */,
+				54A5E28D21A3206200F57C49 /* Frameworks */,
+				54A5E28E21A3206200F57C49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54A5E29221A3206200F57C49 /* PBXTargetDependency */,
+			);
+			name = group3_PhysicsAppUITests;
+			productName = group3_PhysicsAppUITests;
+			productReference = 54A5E29021A3206200F57C49 /* group3_PhysicsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54A5E26921A3206100F57C49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Period Three";
+				TargetAttributes = {
+					54A5E27021A3206100F57C49 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					54A5E28421A3206200F57C49 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 54A5E27021A3206100F57C49;
+					};
+					54A5E28F21A3206200F57C49 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 54A5E27021A3206100F57C49;
+					};
+				};
+			};
+			buildConfigurationList = 54A5E26C21A3206100F57C49 /* Build configuration list for PBXProject "group3_PhysicsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54A5E26821A3206100F57C49;
+			productRefGroup = 54A5E27221A3206100F57C49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54A5E27021A3206100F57C49 /* group3_PhysicsApp */,
+				54A5E28421A3206200F57C49 /* group3_PhysicsAppTests */,
+				54A5E28F21A3206200F57C49 /* group3_PhysicsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54A5E26F21A3206100F57C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A5E27F21A3206200F57C49 /* LaunchScreen.storyboard in Resources */,
+				541FB94D21E903F100DAC4A7 /* MagnetGameScene.sks in Resources */,
+				545AC98421E90B16009139D5 /* RightScene.sks in Resources */,
+				54A5E27C21A3206200F57C49 /* Assets.xcassets in Resources */,
+				54A5E27A21A3206100F57C49 /* Main.storyboard in Resources */,
+				54538FAB21A484720059A6BC /* ThermalTransferScene.sks in Resources */,
+				541FB94421E8FC9600DAC4A7 /* FrictionGameScene.sks in Resources */,
+				545AC98C21E90B3A009139D5 /* Actions.sks in Resources */,
+				545AC98021E90B07009139D5 /* GameScene.sks in Resources */,
+				545AC98821E90B28009139D5 /* TopScene.sks in Resources */,
+				AAB3417B21BD8AE10042E417 /* CarFrictionScene.sks in Resources */,
+				AAC1959F21B38CFE00E7ABA0 /* Assets.xcassets in Resources */,
+				AAC1959E21B38CFE00E7ABA0 /* candleLight.sks in Resources */,
+				22030D4821EEA99A00777F28 /* MenuScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28321A3206200F57C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28E21A3206200F57C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108E2D090BC7FE59721CCD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-group3_PhysicsApp/Pods-group3_PhysicsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-group3_PhysicsApp/Pods-group3_PhysicsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15D1CC52E35B8D72B45A4D19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-group3_PhysicsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94FF5DDA420B648973C75B8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-group3_PhysicsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E37FE90F643780A0B2A04F4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-group3_PhysicsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54A5E26D21A3206100F57C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541FB94621E8FC9C00DAC4A7 /* FrictionGameScene.swift in Sources */,
+				54A5E27521A3206100F57C49 /* AppDelegate.swift in Sources */,
+				545AC98A21E90B2E009139D5 /* TopScene.swift in Sources */,
+				221237F021EE662900106F4E /* test.swift in Sources */,
+				541FB94F21E903FC00DAC4A7 /* MagnetGameScene.swift in Sources */,
+				547F82B721A720C400BC0CC1 /* ThermalTransferSelectMenu.swift in Sources */,
+				545AC98E21E90B41009139D5 /* GameViewController.swift in Sources */,
+				54538FAF21A485130059A6BC /* ThermalTransferViewController.swift in Sources */,
+				541FB95121E9040800DAC4A7 /* MagnetGameViewController.swift in Sources */,
+				AAB3417D21BD8B110042E417 /* CarFrictionScene.swift in Sources */,
+				54538FAD21A484A40059A6BC /* ThermalTransferScene.swift in Sources */,
+				AAB3417321BD84E40042E417 /* CarFrictionViewController.swift in Sources */,
+				22030D4A21EEA9CA00777F28 /* MenuScene.swift in Sources */,
+				541FB94B21E903E600DAC4A7 /* MagnetVariables.swift in Sources */,
+				AA61488E21B49E5C00165E01 /* ThermalChart.swift in Sources */,
+				AA03ABB721C72377007667DF /* CarFrictionMenu1.swift in Sources */,
+				541FB94021E8FC8500DAC4A7 /* ViewController.swift in Sources */,
+				541FB94221E8FC9000DAC4A7 /* FrictionVariables.swift in Sources */,
+				54A5E2A321A322F900F57C49 /* GradeSelect.swift in Sources */,
+				541FB94821E8FCA200DAC4A7 /* FrictionGameViewController.swift in Sources */,
+				22030D4C21EEC09E00777F28 /* test2.swift in Sources */,
+				545AC98221E90B0E009139D5 /* GameScene.swift in Sources */,
+				547381F021B1B1BE007BA246 /* SKButtonNode.swift in Sources */,
+				545AC97E21E90AFB009139D5 /* InsertVariableView.swift in Sources */,
+				54A5E2A521A3231800F57C49 /* Grade11ModelSelect.swift in Sources */,
+				545AC97C21E90AF2009139D5 /* Variables.swift in Sources */,
+				545AC98621E90B1E009139D5 /* RightScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28121A3206200F57C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A5E28A21A3206200F57C49 /* group3_PhysicsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A5E28C21A3206200F57C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A5E29521A3206200F57C49 /* group3_PhysicsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54A5E28721A3206200F57C49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A5E27021A3206100F57C49 /* group3_PhysicsApp */;
+			targetProxy = 54A5E28621A3206200F57C49 /* PBXContainerItemProxy */;
+		};
+		54A5E29221A3206200F57C49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A5E27021A3206100F57C49 /* group3_PhysicsApp */;
+			targetProxy = 54A5E29121A3206200F57C49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54A5E27821A3206100F57C49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54A5E27921A3206100F57C49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54A5E27D21A3206200F57C49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54A5E27E21A3206200F57C49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54A5E29721A3206200F57C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54A5E29821A3206200F57C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54A5E29A21A3206200F57C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6B27021645C82389EC3DEE /* Pods-group3_PhysicsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JSS76SUYC;
+				INFOPLIST_FILE = group3_PhysicsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54A5E29B21A3206200F57C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E39865B7A33BE3288381063 /* Pods-group3_PhysicsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JSS76SUYC;
+				INFOPLIST_FILE = group3_PhysicsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54A5E29D21A3206200F57C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE1441357E0C87305779550 /* Pods-group3_PhysicsAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = group3_PhysicsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/group3_PhysicsApp.app/group3_PhysicsApp";
+			};
+			name = Debug;
+		};
+		54A5E29E21A3206200F57C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DE1DFB65502778670CD3A4 /* Pods-group3_PhysicsAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = group3_PhysicsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/group3_PhysicsApp.app/group3_PhysicsApp";
+			};
+			name = Release;
+		};
+		54A5E2A021A3206200F57C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB57D7EC0FB918B32C99E82 /* Pods-group3_PhysicsAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = group3_PhysicsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = group3_PhysicsApp;
+			};
+			name = Debug;
+		};
+		54A5E2A121A3206200F57C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8337C2A4B5AE689A21BE07A /* Pods-group3_PhysicsAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = group3_PhysicsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Period3.group3-PhysicsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = group3_PhysicsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54A5E26C21A3206100F57C49 /* Build configuration list for PBXProject "group3_PhysicsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A5E29721A3206200F57C49 /* Debug */,
+				54A5E29821A3206200F57C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A5E29921A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A5E29A21A3206200F57C49 /* Debug */,
+				54A5E29B21A3206200F57C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A5E29C21A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A5E29D21A3206200F57C49 /* Debug */,
+				54A5E29E21A3206200F57C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A5E29F21A3206200F57C49 /* Build configuration list for PBXNativeTarget "group3_PhysicsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A5E2A021A3206200F57C49 /* Debug */,
+				54A5E2A121A3206200F57C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54A5E26921A3206100F57C49 /* Project object */;
+}
