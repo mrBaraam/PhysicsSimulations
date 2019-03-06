@@ -28,3 +28,8 @@ Requiements
 Issues
 -------
 If you have any problems, please submit an [Issue](https://github.com/mrBaraam/PhysicsSimulations/issues) in our program, we will answer it as soon as possible.
+
+
+Licence
+---------
+BAA PhysicsSimulations is available under the GPL3.0 license. See the [LICENSE](https://github.com/BishopAllenAcademy/school/blob/master/LICENSE) file for more info.
