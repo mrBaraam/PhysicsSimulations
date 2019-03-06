@@ -29,6 +29,14 @@ Issues
 -------
 If you have any problems, please submit an [Issue](https://github.com/mrBaraam/PhysicsSimulations/issues) in our program, we will answer it as soon as possible.
 
+Reference
+---------
+* [Charts](https://github.com/danielgindi/Charts)
+
+
+Author List
+----------
+@anna1119
 
 Licence
 ---------
