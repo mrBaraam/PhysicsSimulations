@@ -32,4 +32,4 @@ If you have any problems, please submit an [Issue](https://github.com/mrBaraam/P
 
 Licence
 ---------
-BAA PhysicsSimulations is available under the GPL3.0 license. See the [LICENSE](https://github.com/BishopAllenAcademy/school/blob/master/LICENSE) file for more info.
+BAA PhysicsSimulations is available under the GPL3.0 license. See the [LICENSE](https://github.com/Andyshome/PhysicsSimulations/blob/master/LICENSE) file for more info.
